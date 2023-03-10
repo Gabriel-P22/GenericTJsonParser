@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Parser: Codable {
+    var name: String
+}

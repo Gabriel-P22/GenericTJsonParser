@@ -14,6 +14,10 @@
 		48209AD529BAB8BB002FF37B /* decodeJsonFilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48209AD429BAB8BB002FF37B /* decodeJsonFilesTests.swift */; };
 		48209ADF29BAB8BB002FF37B /* decodeJsonFilesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48209ADE29BAB8BB002FF37B /* decodeJsonFilesUITests.swift */; };
 		48209AE129BAB8BB002FF37B /* decodeJsonFilesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48209AE029BAB8BB002FF37B /* decodeJsonFilesUITestsLaunchTests.swift */; };
+		48209AEF29BAB8E8002FF37B /* Person.json in Resources */ = {isa = PBXBuildFile; fileRef = 48209AEE29BAB8E8002FF37B /* Person.json */; };
+		48209AF229BAB919002FF37B /* ParserFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48209AF129BAB919002FF37B /* ParserFile.swift */; };
+		48209AF529BAB967002FF37B /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48209AF429BAB967002FF37B /* BundleExtension.swift */; };
+		48209AF729BABA67002FF37B /* JsonFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48209AF629BABA67002FF37B /* JsonFiles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		48209ADA29BAB8BB002FF37B /* decodeJsonFilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = decodeJsonFilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48209ADE29BAB8BB002FF37B /* decodeJsonFilesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decodeJsonFilesUITests.swift; sourceTree = "<group>"; };
 		48209AE029BAB8BB002FF37B /* decodeJsonFilesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decodeJsonFilesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		48209AEE29BAB8E8002FF37B /* Person.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Person.json; sourceTree = "<group>"; };
+		48209AF129BAB919002FF37B /* ParserFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserFile.swift; sourceTree = "<group>"; };
+		48209AF429BAB967002FF37B /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		48209AF629BABA67002FF37B /* JsonFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFiles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,9 @@
 		48209AC129BAB8B8002FF37B /* decodeJsonFiles */ = {
 			isa = PBXGroup;
 			children = (
+				48209AF329BAB95C002FF37B /* Extensions */,
+				48209AF029BAB90E002FF37B /* Parser */,
+				48209AED29BAB8CD002FF37B /* Model */,
 				48209AC229BAB8B8002FF37B /* decodeJsonFilesApp.swift */,
 				48209AC429BAB8B8002FF37B /* ContentView.swift */,
 				48209AC629BAB8BB002FF37B /* Assets.xcassets */,
@@ -127,6 +138,31 @@
 				48209AE029BAB8BB002FF37B /* decodeJsonFilesUITestsLaunchTests.swift */,
 			);
 			path = decodeJsonFilesUITests;
+			sourceTree = "<group>";
+		};
+		48209AED29BAB8CD002FF37B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48209AEE29BAB8E8002FF37B /* Person.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48209AF029BAB90E002FF37B /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				48209AF129BAB919002FF37B /* ParserFile.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		48209AF329BAB95C002FF37B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				48209AF429BAB967002FF37B /* BundleExtension.swift */,
+				48209AF629BABA67002FF37B /* JsonFiles.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48209AEF29BAB8E8002FF37B /* Person.json in Resources */,
 				48209ACB29BAB8BB002FF37B /* Preview Assets.xcassets in Resources */,
 				48209AC729BAB8BB002FF37B /* Assets.xcassets in Resources */,
 			);
@@ -260,6 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				48209AC529BAB8B8002FF37B /* ContentView.swift in Sources */,
+				48209AF529BAB967002FF37B /* BundleExtension.swift in Sources */,
+				48209AF729BABA67002FF37B /* JsonFiles.swift in Sources */,
+				48209AF229BAB919002FF37B /* ParserFile.swift in Sources */,
 				48209AC329BAB8B8002FF37B /* decodeJsonFilesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    var people = allPerson
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            ForEach(people, id: \.name) { person in
+                Text(person.name ?? "Name")
+            }
         }
         .padding()
     }

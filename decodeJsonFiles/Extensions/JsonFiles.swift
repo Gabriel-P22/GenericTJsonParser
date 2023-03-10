@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+let allPerson: [Parser] = Bundle.main.decode(file: "Person")
